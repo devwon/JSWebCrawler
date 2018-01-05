@@ -6,7 +6,7 @@ var savepath = "test.html";
 var aUrl = new java.net.URL(url);
 var conn = aUrl.openConnection(); // URL 에 접속 --- ( ※ 1)
 var ins = conn.getInputStream(); // 입력스트림을 획득
-var file = new java.io.File(savepath); 출력스트림을 획득 ---( ※ 2)
+var file = new java.io.File(savepath); //출력스트림을 획득 ---( ※ 2)
 var out = new java.io.FileOutputStream(file);
 
 // 입력스트림을 읽으면서 출력 스트림에 쓴다---- ( ※ 3)
